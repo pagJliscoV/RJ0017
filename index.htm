@@ -29,112 +29,238 @@
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      align-items: center;
-    }
-
-    .logo {
-      width: 185px;
-      margin-bottom: 1px;
-    }
-
-    .main-title-wrapper {
-      background-color: #f5f5f5;
-    }
-
-    .main-title-container {
-      background-color: #ffffff;
-      padding: 20px 0;
-      margin: 0;
-      text-align: center;
-    }
-
-    .main-title {
-      color: #495057;
-      font-size: 28px;
-      margin: 0;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
-    .divider-bar {
-      height: 1px;
-      background-color: #ddd;
-    }
-
-    .content {
-      flex-grow: 1;
-      padding: 20px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding-right: 1000px;
-    }
-
-    .captcha-container {
-      width: 300px;
-      padding: 1px;
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 3px;
-    }
-
-    .captcha-box {
-      display: flex;
-      align-items: center;
-      padding: 10px;
-    }
-
-    .checkbox {
-      width: 24px;
-      height: 24px;
-      border: 1px solid #ccc;
-      border-radius: 2px;
-      margin-right: 10px;
-      cursor: pointer;
-      position: relative;
-    }
-
-    .captcha-text {
-      flex-grow: 1;
-      color: #555;
-      font-size: 14px;
-    }
-
-    /* 📱 RESPONSIVE FIX */
-    @media (max-width: 768px) {
-      .content {
-        padding-right: 0;
-        justify-content: center;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <div class="logo-container">
-      <img src="TU_LOGO_AQUI.png" alt="Logo" class="logo">
-    </div>
-  </header>
-
-  <div class="main-title-wrapper">
-    <div class="main-title-container">
-      <h1 class="main-title">Verificación de Licencia</h1>
-    </div>
-  </div>
-
-  <div class="divider-bar"></div>
-
-  <div class="content">
-    <div class="captcha-container">
-      <div class="captcha-box">
-        <div class="checkbox"></div>
-        <div class="captcha-text">No soy un robot</div>
-      </div>
-    </div>
-  </div>
-
-</body>
-</html>
+<!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Verificación de Licencia de Conducir - Jalisco</title>
+     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* Importa la fuente Roboto en peso 700 (negrita) desde Google Fonts */
+ 
+         body {
+             font-family: 'Roboto', sans-serif; /* Aplica la fuente Roboto a todo el cuerpo del documento */
+             margin: 0; /* Elimina el margen por defecto del navegador */
+             padding: 0; /* Elimina el padding por defecto */
+             background-color: #ffffff; /* Color de fondo gris claro */
+             color: #333; /* Color del texto oscuro */
+             display: flex; /* Usa flexbox para estructurar */
+             flex-direction: column; /* Apila los elementos en columna */
+             min-height: 100vh; /* Altura mínima de toda la ventana (viewport) */
+         }
+         
+         header {
+             text-align: center; /* Centra el contenido horizontalmente */
+             padding: 15px 0 15px; /* Espaciado superior de 30px, inferior de 15px */
+             background-color: white; /* Fondo blanco para el encabezado */
+             
+         }
+         
+         .logo-container {
+             max-width: 800px; /* Ancho máximo de 800px */
+             margin: 0 auto; /* Centra horizontalmente */
+             display: flex; /* Usa flexbox para organizar internamente */
+             flex-direction: column; /* Apila verticalmente */
+             align-items: center; /* Centra los elementos hijos horizontalmente */
+         }
+         
+         .logo {
+             width: 185px; /* Ancho fijo de 180px */
+             margin-bottom: 1px; /* Margen inferior muy pequeño */
+         }
+         
+         .main-title-wrapper {
+             background-color: #f5f5f5; /* Fondo gris claro para el contenedor principal del título */
+             
+         }
+         
+         .main-title-container {
+             background-color: #ffffff; /* Igual que el contenedor padre */
+             padding: 20px 0; /* Espaciado arriba y abajo */
+             margin: 0; /* Elimina márgenes */
+             text-align: center; /* Centra el texto */
+         }
+         
+         .main-title {
+             color: #495057; /* Color gris oscuro para el título */
+             font-size: 28px; /* Tamaño de fuente grande */
+             margin: 0; /* Sin margen */
+             font-weight: bold; /* Negrita */
+             text-transform: uppercase; /* Convierte el texto en mayúsculas */
+         }
+         
+         .divider-bar {
+             height: 1px; /* Altura de 1px */
+             background-color: #ddd; /* Línea de color gris claro */
+         }
+         
+         .content {
+             flex-grow: 1; /* Permite que este contenedor crezca para llenar espacio */
+             padding: 20px; /* Espaciado interior de 20px */
+             display: flex; /* Usa flexbox */
+             justify-content: flex-start; /* Alinea el contenido al inicio (izquierda) */
+             align-items: flex-start; /* Alinea el contenido arriba */
+             max-width: 1200px; /* Ancho máximo */
+             margin: 0 auto; /* Centrado horizontal */
+             padding-right: 1000px; /* Desplaza el contenido hacia la izquierda exageradamente */
+         }
+         
+         .captcha-container {
+             width: 300px; /* Ancho fijo del contenedor del captcha */
+             padding: 1px; /* Relleno interno */
+             background-color: white; /* Fondo blanco */
+             border: 1px solid #ddd; /* Borde gris claro */
+             border-radius: 3px; /* Bordes ligeramente redondeados */
+         }
+         
+         .captcha-box {
+             display: flex; /* Usa flexbox para alinear elementos del captcha */
+             align-items: center; /* Alinea verticalmente */
+             padding: 10px; /* Espaciado interno */
+         }
+         
+         .checkbox {
+             width: 24px; /* Tamaño del checkbox */
+             height: 24px;
+             border: 1px solid #ccc; /* Borde gris claro */
+             border-radius: 2px; /* Bordes suavemente redondeados */
+             margin-right: 10px; /* Separación a la derecha */
+             cursor: pointer; /* Cambia el cursor al estilo clickeable */
+             position: relative; /* Permite posicionar elementos hijos de forma absoluta */
+         }
+         
+         .captcha-text {
+             flex-grow: 1; /* Ocupa el espacio restante disponible */
+             color: #555; /* Texto gris */
+             font-size: 14px; /* Tamaño de fuente mediano */
+         }
+         
+         .hcaptcha-branding {
+             text-align: right; /* Alinea el contenido hacia la derecha */
+         }
+         
+         .hcaptcha-logo {
+             height: 40px; /* Altura del logo */
+         }
+         
+         .captcha-links {
+             font-size: 10px; /* Tamaño pequeño para los enlaces */
+             color: #999; /* Color gris claro */
+             text-align: right; /* Alineación derecha */
+             margin-top: 2spx; /* Margen superior pequeño */
+         }
+         
+         .captcha-links a {
+             color: #999; /* Color de los enlaces */
+             text-decoration: none; /* Quita el subrayado */
+             margin: 0 2px; /* Espaciado lateral entre los enlaces */
+         }
+         
+         .footer {
+             background-color: white; /* Fondo blanco */
+             border-top: 1px solid #ddd; /* Borde superior gris claro */
+             text-align: center; /* Texto centrado */
+             padding: 15px; /* Relleno interno */
+             color: #777; /* Texto gris medio */
+             font-size: 12px; /* Tamaño de fuente pequeño */
+             margin-top: auto; /* Empuja el footer hacia abajo */
+         }
+         
+         .verifying {
+             position: absolute; /* Posición absoluta respecto al checkbox */
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             background-color: #f0f0f0; /* Fondo gris claro */
+             display: none; /* Oculto por defecto */
+             justify-content: center; /* Centra horizontalmente el contenido */
+             align-items: center; /* Centra verticalmente */
+             border-radius: 2px; /* Bordes ligeramente redondeados */
+         }
+         
+         .verifying:after {
+             content: ""; /* No muestra texto, pero crea el elemento */
+             width: 20px; /* Tamaño del spinner */
+             height: 20px;
+             border: 2px solid #2196F3; /* Azul */
+             border-radius: 50%; /* Forma circular */
+             border-top-color: transparent; /* Parte superior transparente para el efecto giratorio */
+             animation: spin 1s linear infinite; /* Aplica la animación de giro */
+         }
+         
+         @keyframes spin {
+             to {
+                 transform: rotate(360deg); /* Rota el spinner 360 grados */
+             }
+         }
+         
+         .checkmark {
+             display: none; /* Oculto por defecto */
+             color: #4caf50; /* Color verde de éxito */
+             font-size: 18px; /* Tamaño del símbolo de check */
+             line-height: 24px; /* Altura de línea */
+             text-align: center; /* Centrado */
+         }
+         
+     </style>
+ </head>
+ <body>
+     <header>
+         <div class="logo-container">
+             <img src="Gobierno_de_Jalisco_18-24.svg.png" alt="Jalisco Gobierno Logo" class="logo">
+         </div>
+     </header>
+ 
+     <div class="main-title-wrapper">
+         <div class="main-title-container">
+             <h2 class="main-title">Verificación de Licencia de Conducir</h2>
+         </div>
+         <div class="divider-bar"></div>
+     </div>
+ 
+     <div class="content">
+         <div class="captcha-container">
+             <div class="captcha-box">
+                 <div class="checkbox" id="captchaCheckbox">
+                     <div class="verifying" id="verifying"></div>
+                     <div class="checkmark" id="checkmark">✓</div>
+                 </div>
+                 <div class="captcha-text">I am human</div>
+                 <div class="hcaptcha-branding">
+                     <img src="57117219-0607-11ef-b52-06bd0f937899-logo.png" alt="hCaptcha" class="hcaptcha-logo">
+                 </div>
+             </div>
+             <div class="captcha-links">
+                 <a href="#">Privacy</a> · <a href="#">Terms</a>
+             </div>
+         </div>
+     </div>
+ 
+     <footer class="footer">
+         © 2025 - Cosmocoder S.A. de C.V.
+     </footer>
+ 
+     <script>
+         document.getElementById('captchaCheckbox').addEventListener('click', function() {
+             const verifying = document.getElementById('verifying');
+             verifying.style.display = 'flex';
+ 
+             setTimeout(function() {
+                 verifying.style.display = 'none';
+                 const checkmark = document.getElementById('checkmark');
+                 checkmark.style.display = 'block';
+ 
+                 const checkbox = document.getElementById('captchaCheckbox');
+                 checkbox.style.backgroundColor = '#f0fff0';
+                 checkbox.style.borderColor = '#4caf50';
+ 
+                 // Espera 1 segundo y luego redirige a datos.html
+                 setTimeout(function() {
+                     window.location.href = "datos.html";
+                 }, 1000);
+             }, 1500);
+         });
+     </script>
+ </body>
+ </html> 
